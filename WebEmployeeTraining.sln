@@ -4,10 +4,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PresentationLayer", "PresentationLayer\PresentationLayer.csproj", "{8F4F54AF-927C-4701-8529-3964C9298F3A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9DCB6205-6BBB-4146-BA78-F2125BA72F2D} = {9DCB6205-6BBB-4146-BA78-F2125BA72F2D}
+		{636E5167-08FA-4F33-92BE-088E54C3842D} = {636E5167-08FA-4F33-92BE-088E54C3842D}
+		{FC66A168-2E65-418F-BB90-384B02984374} = {FC66A168-2E65-418F-BB90-384B02984374}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{FC66A168-2E65-418F-BB90-384B02984374}"
+	ProjectSection(ProjectDependencies) = postProject
+		{636E5167-08FA-4F33-92BE-088E54C3842D} = {636E5167-08FA-4F33-92BE-088E54C3842D}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessAccessLayer", "BusinessAccessLayer\BusinessAccessLayer.csproj", "{9DCB6205-6BBB-4146-BA78-F2125BA72F2D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{636E5167-08FA-4F33-92BE-088E54C3842D} = {636E5167-08FA-4F33-92BE-088E54C3842D}
+		{FC66A168-2E65-418F-BB90-384B02984374} = {FC66A168-2E65-418F-BB90-384B02984374}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfrastructureLayer", "InfrastructureLayer\InfrastructureLayer.csproj", "{636E5167-08FA-4F33-92BE-088E54C3842D}"
 EndProject
