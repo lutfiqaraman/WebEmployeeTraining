@@ -10,18 +10,26 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PresentationLayer", "Presen
 		{FC66A168-2E65-418F-BB90-384B02984374} = {FC66A168-2E65-418F-BB90-384B02984374}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{FC66A168-2E65-418F-BB90-384B02984374}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{FC66A168-2E65-418F-BB90-384B02984374}"
 	ProjectSection(ProjectDependencies) = postProject
 		{636E5167-08FA-4F33-92BE-088E54C3842D} = {636E5167-08FA-4F33-92BE-088E54C3842D}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessAccessLayer", "BusinessAccessLayer\BusinessAccessLayer.csproj", "{9DCB6205-6BBB-4146-BA78-F2125BA72F2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessAccessLayer", "BusinessAccessLayer\BusinessAccessLayer.csproj", "{9DCB6205-6BBB-4146-BA78-F2125BA72F2D}"
 	ProjectSection(ProjectDependencies) = postProject
 		{636E5167-08FA-4F33-92BE-088E54C3842D} = {636E5167-08FA-4F33-92BE-088E54C3842D}
 		{FC66A168-2E65-418F-BB90-384B02984374} = {FC66A168-2E65-418F-BB90-384B02984374}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfrastructureLayer", "InfrastructureLayer\InfrastructureLayer.csproj", "{636E5167-08FA-4F33-92BE-088E54C3842D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InfrastructureLayer", "InfrastructureLayer\InfrastructureLayer.csproj", "{636E5167-08FA-4F33-92BE-088E54C3842D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{B20C15A7-5ACB-4F2E-862C-36D6142BF03B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9DCB6205-6BBB-4146-BA78-F2125BA72F2D} = {9DCB6205-6BBB-4146-BA78-F2125BA72F2D}
+		{636E5167-08FA-4F33-92BE-088E54C3842D} = {636E5167-08FA-4F33-92BE-088E54C3842D}
+		{FC66A168-2E65-418F-BB90-384B02984374} = {FC66A168-2E65-418F-BB90-384B02984374}
+		{8F4F54AF-927C-4701-8529-3964C9298F3A} = {8F4F54AF-927C-4701-8529-3964C9298F3A}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +53,10 @@ Global
 		{636E5167-08FA-4F33-92BE-088E54C3842D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{636E5167-08FA-4F33-92BE-088E54C3842D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{636E5167-08FA-4F33-92BE-088E54C3842D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B20C15A7-5ACB-4F2E-862C-36D6142BF03B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B20C15A7-5ACB-4F2E-862C-36D6142BF03B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B20C15A7-5ACB-4F2E-862C-36D6142BF03B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B20C15A7-5ACB-4F2E-862C-36D6142BF03B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
