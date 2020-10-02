@@ -11,4 +11,10 @@
     <PackageReference Include="NLog.Web.AspNetCore" Version="4.9.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="C:\Users\lutfi\.nuget\packages\nlog.config\4.7.5\contentFiles\any\any\NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
