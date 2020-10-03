@@ -4,11 +4,11 @@ using System.Text;
 
 namespace InfrastructureLayer
 {
-    public class EmpVO : ApplicationBase
+    public class EmpVO
     {
-        public EmpVO() : base(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+        public EmpVO()
         {
-            Log.Info("Instance created");
+            StaticLogger.LogInfo(this.GetType(), "Instance created");
         }
     }
 }
