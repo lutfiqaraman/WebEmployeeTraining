@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using InfrastructureLayer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -24,6 +25,7 @@ namespace PresentationLayer
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                EmpVO emp = new EmpVO();
             }
 
             app.UseRouting();

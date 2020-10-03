@@ -8,7 +8,7 @@ namespace InfrastructureLayer
     {
         public EmpVO() : base(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
         {
-            Log.Info("Instance created ...");
+            Log.Info("Instance created");
         }
     }
 }
