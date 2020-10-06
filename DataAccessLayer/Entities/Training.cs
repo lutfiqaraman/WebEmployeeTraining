@@ -6,7 +6,7 @@ using System.Text;
 
 namespace DataAccessLayer.Entities
 {
-    class Training
+    public class Training
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
