@@ -25,7 +25,6 @@ namespace PresentationLayer
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                EmpVO emp = new EmpVO();
             }
 
             app.UseRouting();
