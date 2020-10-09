@@ -27,7 +27,9 @@ namespace DataAccessLayer.DataContext
         }
 
         public DatabaseContext(DbContextOptions<DatabaseContext> options) 
-            : base(options) { }
+            : base(options) 
+        { 
+        }
 
         // List of the DbSet that is used in the system
         public DbSet<Employee> Employees { get; set; }
